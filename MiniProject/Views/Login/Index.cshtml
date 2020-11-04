@@ -18,7 +18,8 @@
             left: 40%;
             top: 40%;
             border: 2px solid #808080;
-            padding: 50px 50px;
+            padding: 40px 40px;
+            background-color:steelblue;
         }
 
         .field-validation-error {
@@ -29,6 +30,9 @@
             height:1065px;
             width:1900px;
         }
+    
+
+       
     </style>
 </head>
 <body>
@@ -41,26 +45,22 @@
         @using (Html.BeginForm("Authorize", "Login", FormMethod.Post))
         {
             <table>
+            
                 <tr>
-                    <td>
-                    </td>
-
+                    <td> @Html.LabelFor(model => model.UserName) : </td>
+                    <td> @Html.EditorFor(model => model.UserName) </td>
                 </tr>
                 <tr>
-                    <td> @Html.LabelFor(model => model.UserName)</td>
-                    <td> @Html.EditorFor(model => model.UserName)</td>
-                </tr>
-                <tr>
-                    <td></td>
+                    
                     <td>@Html.ValidationMessageFor(model => model.UserName)<br /></td>
                 </tr>
                 <tr>
 
-                    <td>@Html.LabelFor(model => model.Password)</td>
-                    <td>@Html.EditorFor(model => model.Password)</td>
+                    <td>@Html.LabelFor(model => model.Password) :</td>
+                    <td>@Html.EditorFor(model => model.Password) </td>
                 </tr>
                 <tr>
-                    <td></td>
+                    
                     <td>@Html.ValidationMessageFor(model => model.Password)<br /></td>
                 </tr>
                 <tr>
