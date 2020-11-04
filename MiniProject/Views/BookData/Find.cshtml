@@ -1,0 +1,44 @@
+﻿@model MiniProject.Models.BooksTable
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <style>
+        
+    </style>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Find</title>
+</head>
+<body >
+  
+    <h1 style="background-color:steelblue">
+        ----------------------------------------------Details to be updated------------------------------------------
+
+    </h1>
+    <div style="background-color:moccasin">
+        @using (Html.BeginForm())
+        {
+            <p>
+                Enter the BookID: @Html.EditorFor((m) => m.BookID)
+            </p>
+            <p>
+                Enter the BookName: @Html.EditorFor((m) => m.BookName)
+            </p>
+            <p>
+                Enter the BookAuthor: @Html.EditorFor((m) => m.BookAuthor)
+            </p>
+            <p>
+                Enter the BookPrice: @Html.EditorFor((m) => m.BookPrice)
+            </p>
+            <button>Save Changes</button>
+        }
+    </div>
+</body>
+</html>

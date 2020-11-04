@@ -1,0 +1,138 @@
+﻿@model MiniProject.Models.BooksTable
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NewBook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Century Gothic;
+            
+            color: #fff;
+        }
+        .form-wrap {
+            width: 600px;
+            background: none;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            position: fixed;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -50%);
+        }
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(../../photo/books1.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-weight: normal;
+            margin-bottom: 1px;
+        }
+        input {
+            width: 100%;
+            background: none;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            padding: 3px 30px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #fff;
+        }
+        table, th, td {
+            border: 2px solid gray ;
+            text-align: center;
+            background-color: black;
+        }
+
+        th, td {
+            padding: 1px;
+            margin: 2px;
+            background-color: none;
+        }
+
+        h1 {
+            color: navajowhite;
+        } 
+
+    </style>
+    
+</head>
+<body >
+    <main>
+        @*<img src="~/photo/images.jpg" />*@
+  
+
+        <h1>-------------------------------------------------------------ADD NEW BOOK--------------------------------------------------------------</h1> 
+        
+
+
+            @using (Html.BeginForm())
+            {
+
+
+                <div class="form-wrap">
+      
+                    
+                    <center>
+                        
+                        <table >
+
+                            <tr>
+                                <td align="center"><h1 style="font-size:180%;"> Enter BookID: </h1> </td>
+                                <td>@Html.EditorFor((m) => m.BookID)</td>
+
+                            </tr>
+                            <tr>
+                                <td align="center"><h1 style="font-size:180%;"> Enter BookName: </h1> </td>
+                                <td>@Html.EditorFor((m) => m.BookName)</td>
+
+                            </tr>
+
+                            <tr>
+                                <td align="center"><h1 style="font-size:180%;"> Enter BookAuthor: </h1></td>
+                                <td> @Html.EditorFor((m) => m.BookAuthor)</td>
+
+                            </tr>
+                            <tr>
+                                <td align="center"><h1 style="font-size:180%;"> Enter BookPrice: </h1></td>
+                                <td>@Html.EditorFor((m) => m.BookPrice)</td>
+
+
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+
+
+                                    <center><button style="color:orangered;font-size:larger">Add new book</button></center>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </center>
+
+
+
+
+
+
+                        
+                        
+
+                    </div>
+            }
+</main>
+</body>
+</html>

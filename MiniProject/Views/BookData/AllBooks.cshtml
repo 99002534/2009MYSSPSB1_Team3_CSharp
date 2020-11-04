@@ -1,0 +1,100 @@
+﻿@model List<MiniProject.Models.BooksTable>
+@{
+    Layout = null;
+    if (Session["UserId"] == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
+}
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   
+    <link rel="Stylesheet" type="text/css" href="~/Scripts/jquery-3.4.1.min.js" />
+    <meta name="viewport" content="width=device-width" />
+    <title>All Books</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(../../photo/wp2274636.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table {
+            width: 750px;
+            border-collapse: collapse;
+            margin: 50px auto;
+        }
+
+        /* Zebra striping */
+        tr:nth-of-type(odd) {
+            background-color: cadetblue;
+           
+        }
+
+        th {
+            background: #3498db;
+            color: black;
+            font-weight: bold;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+            font-size: 18px;
+            background-color: cadetblue;
+            
+        }
+        h2{
+            background-color:chocolate;
+            margin:auto;
+        }
+    </style>
+</head>
+<body style="background-color:aquamarine;">
+    
+    <nav>
+        <div>
+
+            <button style="background-color:greenyellow;font-family:Arial;font-size:medium">   @Html.ActionLink("LogOut", "Login")</button>
+
+            <button style="background-color:greenyellow;font-family:Arial;font-size:medium">  @Html.ActionLink("ADD NEW BOOK", "NewBook")</button>
+        </div>
+    </nav>
+    <center><h2>----------------ALL BOOK DETAILS-----------------</h2></center><hr />
+    <div>
+        <table border="1" width="100%" cellpadding="5">
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Book Author</th>
+                <th>Book Price</th>
+                <th>Options</th>
+            </tr>
+            @foreach (var emp in Model)
+            {
+                <tr>
+
+                    <td>@emp.BookID</td>
+                    <td>@emp.BookName</td>
+                    <td>@emp.BookAuthor</td>
+                    <td>@emp.BookPrice</td>
+
+                    <td>
+                        <button style="background-color:lightgreen;font-family:Arial;font-size:medium">  @Html.ActionLink("Edit Book", "Find", new { id = emp.BookID })</button>
+
+                        <button style="background-color:lightcoral;font-family:Arial;font-size:medium"> @Html.ActionLink("Delete Book", "Delete", new { id = emp.BookID })</button>
+</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
