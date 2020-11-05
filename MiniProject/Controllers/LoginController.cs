@@ -1,7 +1,8 @@
 ﻿using MiniProject.Models;
+using System;
 using System.Linq;
 using System.Web.Mvc;
-
+using System.Web.Routing;
 
 namespace MiniProject.Controllers
 {
@@ -33,8 +34,13 @@ namespace MiniProject.Controllers
         }
         public ActionResult LogOut()
         {
+
             Session.Abandon();
-            return RedirectToAction("Index", "Login");
+             return RedirectToAction("Index", "Login");
+            // return RedirectToAction(RouteValueDictionary(new { controller = "Login", action = "Index" }));
+           // return Redirect("Login/Index");
         }
+
+       
     }
 }
