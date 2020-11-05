@@ -1,4 +1,5 @@
 ﻿@model List<MiniProject.Models.BooksTable>
+
 @{
     Layout = null;
     if (Session["UserId"] == null)
@@ -56,18 +57,50 @@
             background-color: burlywood;
             margin: auto;
         }
+
+        ul {
+            float: right;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+
+            ul li {
+                display: inline-block;
+            }
+
+                ul li a {
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 5px 20px;
+                    border: 2px ;
+                    transition: 0.6s ease;
+                }
+
+                ul li.active a {
+                    background-color: #fff;
+                    color: #000;
+                }
+
+                ul li a:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
     </style>
 </head>
 <body style="background-color:aquamarine;">
 
-    <nav>
+    
         <div>
 
-            <button style="background-color:greenyellow;font-family:Arial;font-size:medium">   @Html.ActionLink("LogOut", "Login")</button>
+            @*<button style="background-color:greenyellow;font-family:Arial;font-size:medium">   @Html.ActionLink("LogOut", "LogOut")</button>*@
+            <ul>
+                <li><a href="@Url.Action("LogOut","Login")" class="btn btn-warning">Logout</a></li>
 
+            </ul>
+            
             <button style="background-color:greenyellow;font-family:Arial;font-size:medium">  @Html.ActionLink("ADD NEW BOOK", "NewBook")</button>
-        </div>
-    </nav>
+        
+    <br /><br /><br />
     <center><h2>----------------ALL BOOK DETAILS-----------------</h2></center><hr />
     <div>
         <table border="1" width="100%" cellpadding="5">
@@ -95,6 +128,7 @@
                 </tr>
             }
         </table>
+        
     </div>
 </body>
 </html>
