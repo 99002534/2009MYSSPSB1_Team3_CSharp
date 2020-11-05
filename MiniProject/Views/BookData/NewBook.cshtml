@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>NewBook</title>
@@ -30,7 +31,7 @@
         }
 
         body {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(../../photo/books1.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../photo/books1.jpg);
             height: 100vh;
             background-repeat: no-repeat;
             background-size: cover;
@@ -55,13 +56,16 @@
             color: navajowhite;
         }
 
-        table, th, td {
+        table,
+        th,
+        td {
             border: 2px solid grey;
             text-align: center;
             background-color: midnightblue;
         }
 
-        th, td {
+        th,
+        td {
             padding: 1px;
             margin: 2px;
             background-color: none;
@@ -89,12 +93,14 @@
     </style>
 
 </head>
+
 <body>
     <main>
         @*<img src="~/photo/images.jpg" />*@
 
 
-        <h1>-------------------------------------------------------------ADD NEW BOOK--------------------------------------------------------------</h1>
+        <h1>-------------------------------------------------------------ADD NEW
+            BOOK--------------------------------------------------------------</h1>
 
 
 
@@ -110,23 +116,31 @@
                     <table>
 
                         <tr>
-                            <td align="center"><h1 style="font-size:180%;"> Enter BookID: </h1> </td>
+                            <td align="center">
+                                <h1 style="font-size:180%;"> Enter BookID: </h1>
+                            </td>
                             <td>@Html.EditorFor((m) => m.BookID)</td>
 
                         </tr>
                         <tr>
-                            <td align="center"><h1 style="font-size:180%;"> Enter BookName: </h1> </td>
+                            <td align="center">
+                                <h1 style="font-size:180%;"> Enter BookName: </h1>
+                            </td>
                             <td>@Html.EditorFor((m) => m.BookName)</td>
 
                         </tr>
 
                         <tr>
-                            <td align="center"><h1 style="font-size:180%;"> Enter BookAuthor: </h1></td>
+                            <td align="center">
+                                <h1 style="font-size:180%;"> Enter BookAuthor: </h1>
+                            </td>
                             <td> @Html.EditorFor((m) => m.BookAuthor)</td>
 
                         </tr>
                         <tr>
-                            <td align="center"><h1 style="font-size:180%;"> Enter BookPrice: </h1></td>
+                            <td align="center">
+                                <h1 style="font-size:180%;"> Enter BookPrice: </h1>
+                            </td>
                             <td>@Html.EditorFor((m) => m.BookPrice)</td>
 
 
@@ -135,7 +149,9 @@
                             <td colspan="2">
 
 
-                                <button><center>Add new book</center></button>
+                                <button>
+                                    <center>Add new book</center>
+                                </button>
                             </td>
 
                         </tr>
@@ -146,4 +162,5 @@
         }
     </main>
 </body>
+
 </html>
