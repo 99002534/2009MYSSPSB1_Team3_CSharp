@@ -15,9 +15,9 @@
             margin: 0;
             padding: 0;
             font-family: Century Gothic;
-            
             color: #fff;
         }
+
         .form-wrap {
             width: 600px;
             background: none;
@@ -28,18 +28,21 @@
             top: 30%;
             transform: translate(-50%, -50%);
         }
+
         body {
             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(../../photo/books1.jpg);
             height: 100vh;
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         h1 {
             text-align: center;
             color: #fff;
             font-weight: normal;
             margin-bottom: 1px;
         }
+
         input {
             width: 100%;
             background: none;
@@ -51,8 +54,9 @@
             font-size: 16px;
             color: navajowhite;
         }
+
         table, th, td {
-            border: 2px solid grey ;
+            border: 2px solid grey;
             text-align: center;
             background-color: midnightblue;
         }
@@ -66,8 +70,9 @@
         h1 {
             color: antiquewhite;
         }
+
         button {
-            background-color: cadetblue; 
+            background-color: cadetblue;
             border: none;
             color: white;
             padding: 15px 32px;
@@ -76,71 +81,69 @@
             display: inline-block;
             font-size: 16px;
             cursor: pointer;
-            
         }
 
         .btn-group .button:hover {
             background-color: #3e8e41;
         }
-        
     </style>
-    
+
 </head>
-<body >
+<body>
     <main>
         @*<img src="~/photo/images.jpg" />*@
-  
-
-        <h1>-------------------------------------------------------------ADD NEW BOOK--------------------------------------------------------------</h1> 
-        
 
 
-            @using (Html.BeginForm())
-            {
+        <h1>-------------------------------------------------------------ADD NEW BOOK--------------------------------------------------------------</h1>
 
 
-                <div class="form-wrap">
-      
-                    
-                    <center>
-                        
-                        <table >
 
-                            <tr>
-                                <td align="center"><h1 style="font-size:180%;"> Enter BookID: </h1> </td>
-                                <td>@Html.EditorFor((m) => m.BookID)</td>
-
-                            </tr>
-                            <tr>
-                                <td align="center"><h1 style="font-size:180%;"> Enter BookName: </h1> </td>
-                                <td>@Html.EditorFor((m) => m.BookName)</td>
-
-                            </tr>
-
-                            <tr>
-                                <td align="center"><h1 style="font-size:180%;"> Enter BookAuthor: </h1></td>
-                                <td> @Html.EditorFor((m) => m.BookAuthor)</td>
-
-                            </tr>
-                            <tr>
-                                <td align="center"><h1 style="font-size:180%;"> Enter BookPrice: </h1></td>
-                                <td>@Html.EditorFor((m) => m.BookPrice)</td>
+        @using (Html.BeginForm())
+        {
 
 
-                            </tr>
-                            <tr>
-                                <td colspan="2">
+            <div class="form-wrap">
 
 
-                                    <button><center>Add new book</center></button>
-                                </td>
+                <center>
 
-                            </tr>
-                        </table>
-                    </center>    
+                    <table>
 
-                    </div>
-            }
-</main>
+                        <tr>
+                            <td align="center"><h1 style="font-size:180%;"> Enter BookID: </h1> </td>
+                            <td>@Html.EditorFor((m) => m.BookID)</td>
+
+                        </tr>
+                        <tr>
+                            <td align="center"><h1 style="font-size:180%;"> Enter BookName: </h1> </td>
+                            <td>@Html.EditorFor((m) => m.BookName)</td>
+
+                        </tr>
+
+                        <tr>
+                            <td align="center"><h1 style="font-size:180%;"> Enter BookAuthor: </h1></td>
+                            <td> @Html.EditorFor((m) => m.BookAuthor)</td>
+
+                        </tr>
+                        <tr>
+                            <td align="center"><h1 style="font-size:180%;"> Enter BookPrice: </h1></td>
+                            <td>@Html.EditorFor((m) => m.BookPrice)</td>
+
+
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+
+
+                                <button><center>Add new book</center></button>
+                            </td>
+
+                        </tr>
+                    </table>
+                </center>
+
+            </div>
+        }
+    </main>
 </body>
 </html>
