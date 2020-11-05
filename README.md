@@ -6,4 +6,5 @@ Contributors
 
 
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e160b10790b9479f88c8ea0951ab02ce)](https://app.codacy.com/gh/99002482/2009MYSSPSB1_CSharp?utm_source=github.com&utm_medium=referral&utm_content=99002482/2009MYSSPSB1_CSharp&utm_campaign=Badge_Grade)
 [![Build Status](https://dev.azure.com/nisarga0388/CSharp%20Project/_apis/build/status/99002482.2009MYSSPSB1_CSharp?branchName=master)](https://dev.azure.com/nisarga0388/CSharp%20Project/_build/latest?definitionId=1&branchName=master)
