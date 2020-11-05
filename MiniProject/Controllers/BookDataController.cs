@@ -1,6 +1,6 @@
-﻿using System.Linq;
+﻿using MiniProject.Models;
+using System.Linq;
 using System.Web.Mvc;
-using MiniProject.Models;
 
 namespace MiniProject.Controllers
 {
