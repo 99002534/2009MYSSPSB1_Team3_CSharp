@@ -1,8 +1,5 @@
 ﻿using MiniProject.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 
@@ -14,11 +11,11 @@ namespace MiniProject.Controllers
         public ActionResult Index()
         {
             return View();
-        }  
+        }
 
         public ActionResult Authorize(MiniProject.Models.LoginTable loginTable)
         {
-            using (LoginTableEntities db =new LoginTableEntities())
+            using (LoginTableEntities db = new LoginTableEntities())
             {
                 var userDetails = db.LoginTables.Where(x => x.UserName == loginTable.UserName && x.Password == loginTable.Password).FirstOrDefault();
                 if (userDetails == null)
@@ -32,7 +29,7 @@ namespace MiniProject.Controllers
                     return RedirectToAction("AllBooks", "BookData");
                 }
             }
-            
+
         }
         public ActionResult LogOut()
         {
