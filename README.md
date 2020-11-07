@@ -28,10 +28,10 @@ Features:-
 
 ## Screenshots :camera:
 
-<p><img src="/screenshot/Home page.png" width="200" height="350" hspace=40>
-  <img src="/screenshot/All book details.png" width="200" height="350" hspace=40>
-  <img src="/screenshot/Edit book page.png" width="200" height="350" hspace=40>
-  <img src="/screenshot/Add new book page.png" width="200" height="350" hspace=40>
+<p><img src="/screenshot/Home page.png" width="400" height="350" hspace=40>
+  <img src="/screenshot/All book details.png" width="400" height="350" hspace=40>
+  <img src="/screenshot/Edit book page.png" width="400" height="350" hspace=40>
+  <img src="/screenshot/Add new book page.jpeg" width="400" height="350" hspace=40>
 </p>
 
 
