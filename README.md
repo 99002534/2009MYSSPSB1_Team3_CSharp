@@ -12,9 +12,6 @@ Contributors
 ![.github/workflows/codeinspection.yml](https://github.com/99002482/2009MYSSPSB1_CSharp/workflows/.github/workflows/codeinspection.yml/badge.svg)
 
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/63a689440186469b955feffc134efb31)](https://app.codacy.com/gh/99002482/2009MYSSPSB1_AndroidProject?utm_source=github.com&utm_medium=referral&utm_content=99002482/2009MYSSPSB1_AndroidProject&utm_campaign=Badge_Grade)
-
-
 #Book Management System
 The project is implemented using MVC framework which is web form based application. The admin can login to the portal and he can search for books, add new book details, delete book details and view all book details.
 Features:-
