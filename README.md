@@ -30,7 +30,7 @@ Features:-
 
 |                       Login Page                     |                       Book Details Page                       |
 | :--------------------------------------------------: | :---------------------------------------------------:         |
-|  <img src="screenshot/Home.png" height="600">        |     <img src="screenshot/All book details.png" height="600">  |
+|  <img src="screenshot/Home page.png" height="600">        |     <img src="screenshot/All book details.png" height="600">  |
 
 |                       Edit Book Details Page           |                       Add New Book Dertails Page        |                                              
 | :--------------------------------------------------:   | :---------------------------------------------------:   | 
