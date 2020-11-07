@@ -28,13 +28,12 @@ Features:-
 
 ## Screenshots :camera:
 
-|                       Login Page                                    |                       Book Details Page                                   |
-| :--------------------------------------------------:                | :---------------------------------------------------:                     |
-|<img src="screenshot/Home page.png" height="400">                    |     <img src="screenshot/All book details.png" height="400" >  |
+<p><img src="/screenshot/Home page.png" width="200" height="350" hspace=40>
+  <img src="/screenshot/All book details.png" width="200" height="350" hspace=40>
+  <img src="/screenshot/Edit book page.png" width="200" height="350" hspace=40>
+  <img src="/screenshot/Add new book page.png" width="200" height="350" hspace=40>
+</p>
 
-|                       Edit Book Details Page            |                       Add New Book Dertails Page        |                                              
-| :--------------------------------------------------:    | :---------------------------------------------------:   | 
-|  <img src="screenshot/Edit book page.png" height="400" >|<img src="screenshot/Add new book page.jpeg" height="400" >|     
 
 
 
