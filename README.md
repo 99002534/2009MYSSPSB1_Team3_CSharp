@@ -30,11 +30,11 @@ Features:-
 
 |                       Login Page                                    |                       Book Details Page                                   |
 | :--------------------------------------------------:                | :---------------------------------------------------:                     |
-|<img src="screenshot/Home page.png" height="200">                    |     <img src="screenshot/All book details.png" height="200" >  |
+|<img src="screenshot/Home page.png" height="400">                    |     <img src="screenshot/All book details.png" height="400" >  |
 
 |                       Edit Book Details Page            |                       Add New Book Dertails Page        |                                              
 | :--------------------------------------------------:    | :---------------------------------------------------:   | 
-|  <img src="screenshot/Edit book page.png" height="200" >|<img src="screenshot/Add new book page.png" height="200" >|     
+|  <img src="screenshot/Edit book page.png" height="400" >|<img src="screenshot/Add new book page.jpeg" height="400" >|     
 
 
 
